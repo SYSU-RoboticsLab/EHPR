@@ -1,0 +1,8 @@
+.vscode
+log/*
+sample_data
+results/bev_img/*
+results/keycloud/*
+results/match_comp_img/*
+results/*.pcd
+test.txt

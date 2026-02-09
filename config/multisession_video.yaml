@@ -1,0 +1,46 @@
+%YAML:1.0
+---
+
+#####################################################
+# Part of parameters 
+SwarmParam:
+  ground_robonum: 2
+  air_robonum: 2
+  inlier_thre: 10
+  inlier_thre_gg: 11
+  inlier_thre_he: 7
+  fit_thre_gg: 2.20 
+  fit_thre_he: 2.50 
+
+EnableParam:
+  loop_en_: 1
+  imu_en_: 1
+VoxelMapBConfig:
+  voxel_size: 1.0
+  max_distance: 20
+  max_points_per_voxel: 25
+  remove_distance: 80
+
+Path: 
+  ground_root0: "/home/barry/newspace/space0/dataset_submap/ous_g1/"
+  ground_root1: "/home/barry/newspace/space0/dataset_submap/ous_g2/"
+  air_root0: "/home/barry/newspace/space0/dataset_submap/mid_a1/"
+  air_root1: "/home/barry/newspace/space0/dataset_submap/mid_a2/"
+
+DescriptorDBConfig:
+  max_fine_opt_: 10
+  bucket_size_: 16
+  dist_thres_: 60
+  skip_num_: 5
+  distri_mean_: 115
+  distri_var_: 20
+
+DescriptorManagerConfig:
+  reso_row_: 0.5
+  reso_col_: 0.5
+  n_row_: 210
+  n_col_: 210
+  height_res_: 1.0
+  local_density_rows_: 3 #4 ratio 1/2 
+  local_density_cols_: 3
+  max_dens_: 135 #140
